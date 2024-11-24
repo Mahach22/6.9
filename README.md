@@ -31,7 +31,6 @@
 ```
 
 ```
-ansible-playbook -i inventory_file install_apache.yml
 
 ansible-playbook -i /etc/ansible/hosts install_apache.yml -l all --user root
 
@@ -67,7 +66,7 @@ ansible-playbook -i /etc/ansible/hosts install_apache.yml -l all --user root
 ```
 
 ```
-ansible-playbook -i inventory_file create_user.yml
+ansible-playbook -i /etc/ansible/hosts create_user.yml -l all --user root
 ```
 
 
@@ -108,5 +107,5 @@ ansible-playbook -i inventory_file create_user.yml
 ```
 
 ```
-ansible-playbook -i inventory_file install_and_create_files.yml
+ansible-playbook -i /etc/ansible/hosts install_and_create_files.yml -l all --user root
 ```
