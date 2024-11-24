@@ -95,7 +95,7 @@ ansible-playbook -i /etc/ansible/hosts create_user.yml -l all --user root
 
     - name: Create multiple files with different names
       file:
-        path: "/tmp/file_{{ item }}.txt"
+        path: "/home/newuser/file_{{ item }}.txt"
         state: touch
       loop:
         - 1
