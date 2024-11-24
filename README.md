@@ -32,6 +32,10 @@
 
 ```
 ansible-playbook -i inventory_file install_apache.yml
+
+ansible-playbook -i /etc/ansible/hosts install_apache.yml -l all --user root
+
+
 ```
 
 
